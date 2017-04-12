@@ -30,7 +30,7 @@ public class SecondAcitivity extends AppCompatActivity {
         mPlayer.start();
         createEListeners();
     }
-    
+
     public void createEListeners() {
         Button b1 = (Button) findViewById(R.id.button6);
         Button b2 = (Button) findViewById(R.id.button5);
@@ -73,6 +73,14 @@ public class SecondAcitivity extends AppCompatActivity {
         super.onPause();
             if(mPlayer.isPlaying())
                 mPlayer.pause();
+    }
+    
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(mPlayer==null)
+            mPlayer=MediaPlayer.create(SecondAcitivity.this,currentSong);
+        mPlayer.start();
     }
 
 }
