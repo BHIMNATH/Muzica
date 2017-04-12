@@ -30,4 +30,42 @@ public class SecondAcitivity extends AppCompatActivity {
         mPlayer.start();
         createEListeners();
     }
+    
+    public void createEListeners() {
+        Button b1 = (Button) findViewById(R.id.button6);
+        Button b2 = (Button) findViewById(R.id.button5);
+        Button b3 = (Button) findViewById(R.id.button7);
+        Button b4 = (Button) findViewById(R.id.button8);
+
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onPause();
+                //b2.setVisibility(View.INVISIBLE);
+            }
+        });
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onResume();
+                //b1.setVisibility(View.INVISIBLE);
+            }
+        });
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onStop();
+                //b1.setVisibility(View.VISIBLE);
+                //b2.setVisibility(View.VISIBLE);
+            }
+        });
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnBtn = new Intent("android.intent.action.MAIN");
+                startActivity(returnBtn);
+            }
+        });
+    }
+
 }
