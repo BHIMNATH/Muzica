@@ -83,4 +83,9 @@ public class SecondAcitivity extends AppCompatActivity {
         mPlayer.start();
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mPlayer.stop();
+    }
 }
