@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Android\\Muzica\\app\\build\\intermediates\\res\\merged\\debug\\raw\\song3.mp3",
+        "source": "E:\\Android\\Muzica\\app\\src\\main\\res\\raw\\song3.mp3"
+    },
+    {
+        "merged": "E:\\Android\\Muzica\\app\\build\\intermediates\\res\\merged\\debug\\raw\\song1.mp3",
+        "source": "E:\\Android\\Muzica\\app\\src\\main\\res\\raw\\song1.mp3"
+    },
+    {
+        "merged": "E:\\Android\\Muzica\\app\\build\\intermediates\\res\\merged\\debug\\raw\\song4.mp3",
+        "source": "E:\\Android\\Muzica\\app\\src\\main\\res\\raw\\song4.mp3"
+    },
+    {
+        "merged": "E:\\Android\\Muzica\\app\\build\\intermediates\\res\\merged\\debug\\raw\\song2.mp3",
+        "source": "E:\\Android\\Muzica\\app\\src\\main\\res\\raw\\song2.mp3"
+    }
+]
