@@ -68,4 +68,11 @@ public class SecondAcitivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+            if(mPlayer.isPlaying())
+                mPlayer.pause();
+    }
+
 }
